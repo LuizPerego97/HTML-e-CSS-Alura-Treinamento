@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap'); /*importando fonte do goolgle font*/
+
+*{                                             /*Seleciona todas as tags do projeto , é normal zerarem tds as margens e paddings para deixar sem estilização nenhuma*/
+    margin: 0%;
+    padding: 0%;
+}
+
+body { 
+    box-sizing: border-box;                    /*Mantem os elementos filhos dentro do elemento pai*/ 
+    height: 100vh;                             /*vh = viewport é a tela do nosso dispositivo, height e width define que nosso projeto tenha tamanho total de 100% na altura e largura da tela */
+    width: 100%vh;
+    background-color: #0E131F;                /* Cor do fundo */
+    color: white;                           /* Cor da fonte, pode ser representado por valores hexadecimal(#999999) e nomes de cores (white) */
+}
+
+.apresentacao{
+    margin: 10% 15%;
+    display: flex;                             /*flex-box Responsavel por indicar o flexbox, que todos os filhos apartir daqui tem esse atributo por padrao em linha (row)*/
+    align-items: center;                       /*flex-box Alinhar os itens ao centro baseado na altura do elemento maior*/
+    justify-content: space-between;            /*flex-box da margin entre os elementos filhos */
+
+    .apresentacao_conteudo{                     /*Acessando o elemento filho da apresentação */
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;                              /*Elemento do felx-box que é responsavel por espaçar as colunas ou rows*/
+            
+        .apresentacao_conteudo_titulo{          /*Acessando o elemento neto da apresentação */
+            font-size: 36px;
+            font-family: "Lora", serif;
+
+        }
+
+        .apresentacao_conteudo_paragrafo{       /*Acessando o elemento neto da apresentação */
+            font-size: 24px;
+            font-family:'Courier New', Courier, monospace;
+
+        }
+
+        .apresentacao_links{                      /*Acessando o elemento neto da apresentação */
+            display: flex;                       /*flex-box Coloando flex box nos elementos filhos no elemento , no caso os dois links*/
+            justify-content: space-between;      /*flex-box da margin entre os elementos filhos */
+        
+
+            .apresentacao_links_links{
+                background-color: rgba(0, 255, 255, 0.36);
+                width: 280px;
+                padding: 21.5px 0;              /*Cria um espaço entre o conteúdo e a borda do elemento a primeira informação é responsavel pela top e botton e a segunda left e right */
+                text-align: center;             /*Alinhar o texto ao centro*/
+                border-radius: 16px;
+                font-size: 24px;
+                text-decoration: none;          /*Tira a decoração do link ou ancora*/
+                color: black;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: 800;
+            }
+
+
+        }
+
+    }
+
+   
+}
+
+strong{
+    color: #EF224B;                           /* negrito com importancia semantica no navegador, influencia acessibilidade*/
+}
+
+span{
+    color: #FF0035;                /* negrito sem importancia semantica no navegador,  não influencia acessibilidade*/
+}
+
+img{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 7%;
+}
+
+
