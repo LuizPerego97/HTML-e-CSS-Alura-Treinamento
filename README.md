@@ -18,6 +18,5 @@ CSS3: Estilização com Box Model, Flexbox e importação de fontes externas.
 ✔ Uso de fontes personalizadas via Google Fonts.
 ✔ Elementos estilizados para melhor acessibilidade e experiência do usuário.
 
-🔗 Acesse meu portfólio
 📌 LinkedIn  (https://www.linkedin.com/in/luizperego/)
 📌 GitHub    (https://github.com/LuizPerego97)
